@@ -291,7 +291,7 @@ body {
 
 .services__item:hover {
 	background-color: #0d5c63;
-	transition: all 0.3s ease;
+	transition: all 0.3s ease 0s;
 }
 
 .services__item:hover .item-service__title,
