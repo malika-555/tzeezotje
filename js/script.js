@@ -4,78 +4,101 @@
 
 const iconMenu = document.querySelector(".icon__menu");
 if (iconMenu) {
-  const menuBody = document.querySelector(".menu__body");
-  iconMenu.addEventListener("click", function (e) {
-    document.body.classList.toggle("_lock");
-    iconMenu.classList.toggle("_active");
-    menuBody.classList.toggle("_active");
-    
-      
-});
+    const menuBody = document.querySelector(".menu__body");
+    iconMenu.addEventListener("click", function (e) {
+        document.body.classList.toggle("_lock");
+        iconMenu.classList.toggle("_active");
+        menuBody.classList.toggle("_active");
+    });
 }
 
 // popup
 
-var modal = document.getElementById('myModal');
-var btn = document.getElementById('myBtn');
-var btn1 = document.getElementById('myBtn1');
-var btn2 = document.getElementById('myBtn2');
-var span = document.getElementsByClassName("close")[0];
+const myBtn = document.querySelector("#myBtn");
+const myModal = document.querySelector("#myModal");
+const close = document.querySelector(".close");
+const modalContent = document.querySelector(".modal-content ");
+const modalSubtitle = document.querySelector(".modal__subtitle");
+const modaltitle = document.querySelector(".modal__title");
 
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-btn1.onclick = function () {
-    modal.style.display = "block";
-}
-btn2.onclick = function () {
-    modal.style.display = "block";
-}
+myBtn.addEventListener("click", () => {
+    myModal.style.display = "block";
+});
+close.addEventListener("click", (e) => {
+    const target = e.target;
+    myModal.style.display = "";
 
-span.onclick = function () {
-    modal.style.display = "none";
-}
+});
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+window.addEventListener("click", (e) => {
+    closePopap(e);
+});
+
+function closePopap(e) {
+    if (myModal.style.display == "block") {
+
+        if (e.target === myModal) {
+            return myModal.style.display = "";
+        }
     }
 }
 
-// бегущие числа
+// ajax
 
-const time = 4000; // ms
-const step = 1; 
+const form = document.getElementById('form');
 
-function outNum(num, elem) {
-	let l = document.querySelector('#' + elem);
-	let n = 0;
-	let t = Math.round(time/(num/step));
-	let interval = setInterval(() => {
-		n = n + step;
-		if (n == num) {
-			clearInterval(interval);
-		}
-		l.innerHTML = n;
-	},
-		t);
-}
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
 
+    const formData = new FormData(form);
 
-function onEntry(entry) {
-	entry.forEach(change => {
-	  if (change.isIntersecting) {
-		outNum(15, 'num-1');
-        outNum(125, 'num-2');
-        outNum(968, 'num-3');
-        outNum(1056, 'num-4');
-	  }
-	});
-  }
-  let options = { threshold: [0.5] };
-  let observer = new IntersectionObserver(onEntry, options);
-  let elements = document.querySelectorAll('.advantages');
-  for (let elm of elements) {
-	observer.observe(elm);
-  }
+    fetch('send.php', {
+        method: 'POST',
+        body: formData
+    })
+        .then(response => response.text())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    form.style.display = "none";
+    modalSubtitle.style.display = "none";
+    modaltitle.textContent = "Your message has been sent";
+    setTimeout(() => {
+
+        myModal.style.display = "";
+    }, 2000);
+});
+
+// swiper
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    keyboard: true,
+    loop: true,
+    slideToClickSlide: true
+});
+
+// swiper2
+
+var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 2.2,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2",
+    },
+    freeMode: true,
+    loop: true,
+
+});
+

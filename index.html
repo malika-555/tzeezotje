@@ -5,19 +5,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize1.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap"
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap"
 		rel="stylesheet" />
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
-	<title>consultant</title>
+	<script src="js/script.js" defer></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<title>tzeezotje</title>
 </head>
 
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container _container">
-				<a href="#" class="header__logo">
-					Consultant
+				<a href="#" class="header__logo logo">
+					<img src="img/logo.svg" alt="">
 				</a>
 				<nav class="header__menu menu">
 					<div class="menu__icon icon__menu ">
@@ -26,434 +30,362 @@
 					<div class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="#" class="menu__link">О нас</a>
+								<a href="#" class="menu__link">À la carte</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">Услуги</a>
+								<a href="#" class="menu__link">Wijnkaart</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">Цены</a>
+								<a href="#" class="menu__link">Lunchmenu</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">Контакты</a>
+								<a href="#" class="menu__link">Contact</a>
 							</li>
 						</ul>
 					</div>
 				</nav>
+				<div class="header__phone">
+					<div class="header__phone_icon">
+						<img src="img/i-phone.svg" alt="">
+					</div>
+					<a href="tel:+3292825725" class="header__phone_number">+32 9 282 57 25</a>
+				</div>
 			</div>
 		</header>
 		<main class="page">
-			<div class="page__main-block main-block">
+			<section class="page__main-block main-block">
 				<div class="main-block__container _container">
 					<div class="main-block__body">
-						<h1 class="main-block__title">Юридическое и бухгалтерское сопровождение бизнеса</h1>
 						<div class="main-block__text">
-							Консалтинговое агентство <span>Consultant</span> предлагает эффективные бизнес-технологии и
-							правовые решения
+							OPEN EVERYDAY 6AM - 9PM
 						</div>
-						<div class="main-block__buttons">
-							<button id="myBtn" class="main-block__button main-block__button_orange">Получить <br>
-								консультацию</button>
-							<button id="myBtn1" class="main-block__button main-block__button_border">Узнать <br>
-								подробнее</button>
+						<h1 class="main-block__title">A bad day with lunch is better than a good day without it.</h1>
+						<div class="main-block__connect">
+							<button id="myBtn" class="main-block__button button">Reserve a table</button>
+							<div class="main-block__social social">
+								<a href="#"><img src="img/i-fb.svg" alt=""></a>
+								<a href="#"><img src="img/i-lg.svg" alt=""></a>
+								<a href="#"><img src="img/i-tw.svg" alt=""></a>
+								<a href="#"><img src="img/i-yt.svg" alt=""></a>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="main-block__image _ibg">
-					<img src="img/mainblock/cover.webp" alt="cover">
+					<img src="img/bg.png" alt="cover">
 				</div>
-			</div>
-			<section class="page__services services">
-				<div class="services__container _container">
-					<div class="services__body">
-						<div class="services__column">
-							<div class="services__item item-service">
-								<div class="item-service__icon_1"></div>
-								<a href="#" class="item-service__title">Автоматизация бизнес-процессов</a>
-								<div class="item-service__text">Помощь в организации и развитии бизнеса с нуля</div>
+			</section>
+			<section class="page__menu-block menu-block _container">
+				<div class="menu-block__content">
+					<div class="menu-block__info">
+						<div class="menu-block__title">Woensdag 12/01</div>
+						<div class="menu-block__description">
+							<div class="menu-block__text">Salade met Serrano</div>
+							<div class="menu-block__dots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="menu-block__text">Steak Tartaar</div>
+						</div>
+					</div>
+					<div class="menu-block__info">
+						<div class="menu-block__title">Donderdag 13/01</div>
+						<div class="menu-block__description">
+							<div class="menu-block__text">Toast Roquefort</div>
+							<div class="menu-block__dots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="menu-block__text">Penne met Kip en Prei</div>
+						</div>
+					</div>
+					<div class="menu-block__info">
+						<div class="menu-block__title">Vrijdag 14/01
+						</div>
+						<div class="menu-block__description">
+							<div class="menu-block__text">Verrassing van de Chef</div>
+							<div class="menu-block__dots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="menu-block__text">Penne met Kip en Prei</div>
+						</div>
+					</div>
+					<div class="menu-block__info">
+						<div class="menu-block__title">Vrijdag 15/01
+						</div>
+						<div class="menu-block__description">
+							<div class="menu-block__text">Verrassing van de Chef</div>
+							<div class="menu-block__dots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="menu-block__text">Penne met Kip en Prei</div>
+						</div>
+					</div>
+					<div class="menu-block__info">
+						<div class="menu-block__title">Vrijdag 16/01
+						</div>
+						<div class="menu-block__description">
+							<div class="menu-block__text">Verrassing van de Chef</div>
+							<div class="menu-block__dots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="menu-block__text">Penne met Kip en Prei</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-block__images">
+					<div class="menu-block__image_1"></div>
+					<div class="menu-block__image menu-block__image_2">
+						<img src="img/menu1.png" alt="">
+					</div>
+					<div class="menu-block__image menu-block__image_3">
+						<img src="img/menu2.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="page__swiper">
+				<div class="_container">
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide slider">
+								<div class="slider__icon">
+									<img src="img/i-slider.svg" alt="Изображение">
+								</div>
+								<h3 class="slider__title">Goede service, lekker eten, toffe ambiance</h3>
+								<div class="slider__text">
+									1. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+									tempor
+									invidunt ut labore et dolore
+									magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+									et
+									ea
+									rebum. Stet clita kasd
+									gubergren.
+								</div>
+								<div class="slider__text-name">
+									ALAIN HEYNDRICKX
+								</div>
+							</div>
+							<div class="swiper-slide slider">
+								<div class="slider__icon">
+									<img src="img/i-slider.svg" alt="Изображение">
+								</div>
+								<h3 class="slider__title">Goede service, lekker eten, toffe ambiance</h3>
+								<div class="slider__text">
+									2. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+									tempor
+									invidunt ut labore et dolore
+									magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+									et
+									ea
+									rebum. Stet clita kasd
+									gubergren.
+								</div>
+								<div class="slider__text-name">
+									ALAIN HEYNDRICKX
+								</div>
+							</div>
+							<div class="swiper-slide slider">
+								<div class="slider__icon">
+									<img src="img/i-slider.svg" alt="Изображение">
+								</div>
+								<h3 class="slider__title">Goede service, lekker eten, toffe ambiance</h3>
+								<div class="slider__text">
+									3. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+									tempor
+									invidunt ut labore et dolore
+									magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+									et
+									ea
+									rebum. Stet clita kasd
+									gubergren.
+								</div>
+								<div class="slider__text-name">
+									ALAIN HEYNDRICKX
+								</div>
 							</div>
 						</div>
-						<div class="services__column">
-							<div class="services__item item-service">
-								<div class="item-service__icon_2"></div>
-								<a href="#" class="item-service__title">Налоговая безопасность</a>
-								<div class="item-service__text">Оптимизация налогообложения</div>
-							</div>
+						<div class="swiper-button-next "></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="page__description description _container">
+				<div class="description__row">
+					<div class="description__info">
+						<div class="description__title">LEKKER ETEN</div>
+						<div class="description__text">Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze
+							zich op hun gemak voelen. Dat is onze filosofie, goed
+							eten in een goede sfeer.</div>
+					</div>
+					<div class="description__image">
+						<img src="img/descript1.png" alt="">
+					</div>
+				</div>
+				<div class="description__row description__row_2">
+					<div class="description__info">
+						<div class="description__title">TOFFE AMBIANCE</div>
+						<div class="description__text">Het creëren van de juiste sfeer is zeer belangrijk voor ons. We
+							nemen onze tijd om te zorgen dat alle elementen
+							bijdragen aan de juiste setting.</div>
+					</div>
+					<div class="description__image">
+						<img src="img/descript2.png" alt="">
+					</div>
+				</div>
+				<div class="description__row">
+					<div class="description__info">
+						<div class="description__title">LEKKERE COCKTAILS</div>
+						<div class="description__text">Ons doel is simpel: een gastvrije plek bieden waar u kunt
+							genieten van een onvergetelijke cocktail, een goed gesprek en
+							lekker eten.</div>
+					</div>
+					<div class="description__image">
+						<img src="img/descript1.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="page__gallery gallery">
+				<div class="gallery__header _container">
+					<div class="gallery__info">
+						<div class="gallery__title title">Sfeerfoto's</div>
+						<div class="gallery__text">
+							De beste manier om de sfeer te ervaren is eens langskomen. <br>
+							In tussentijd hebben we hier alvast wat foto’s voor je klaar.
 						</div>
-						<div class="services__column">
-							<div class="services__item item-service">
-								<div class="item-service__icon_3"></div>
-								<a href="#" class="item-service__title">Правовое консультирование</a>
-								<div class="item-service__text">Сопровождение сделок слияний и соглашений</div>
-							</div>
+					</div>
+					<div class="gallery__arrow">
+						<div class="swiper-button-prev swiper-button-prev2 "></div>
+						<div class="swiper-button-next swiper-button-next2"></div>
+					</div>
+				</div>
+				<div class="swiper mySwiper2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/gallery1.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/gallery2.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/gallery3.png" alt="">
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="page__advantages advantages">
-				<div class="advantages__container _container">
-					<div class="advantages__header header-block">
-						<h2 class="header-block__title">О компании в цифрах</h2>
-						<div class="header-block__subtitle">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, blanditiis?
-						</div>
-					</div>
-					<div class="advantages__body">
-						<div class="advantages__column">
-							<div class="advantages__item">
-								<div class="advantages__icon">
-									<img src="img/advantages/01.svg" alt="Изображение">
-								</div>
-								<div id="num-1" class="advantages__value">0</div>
-								<div class="advantages__text">лет на рынке</div>
+			<section class="page__contacts contacts _container">
+				<div class="contacts__content">
+					<div class="contacts__info">
+						<div class="contacts__title title">Contacts</div>
+						<div class="contacts__row">
+							<div class="contacts__icon">
+								<img src="img/con1.svg" alt="">
+							</div>
+							<div class="contacts__text">
+								<div class="contacts__text_1">Phone Number</div>
+								<a href="tel:+3292825725" class="contacts__text_2">+32 9 282 57 25</a>
 							</div>
 						</div>
-						<div class="advantages__column">
-							<div class="advantages__item">
-								<div class="advantages__icon">
-									<img src="img/advantages/02.svg" alt="Изображение">
-								</div>
-								<div id="num-2" class="advantages__value">0</div>
-								<div class="advantages__text">городов</div>
+						<div class="contacts__row">
+							<div class="contacts__icon">
+								<img src="img/con2.svg" alt="">
+							</div>
+							<div class="contacts__text">
+								<div class="contacts__text_1">Email</div>
+								<a href="mailto:info@email.com" class="contacts__text_2">info@email.com</a>
 							</div>
 						</div>
-						<div class="advantages__column">
-							<div class="advantages__item">
-								<div class="advantages__icon">
-									<img src="img/advantages/03.svg" alt="Изображение">
-								</div>
-								<div id="num-3" class="advantages__value">0</div>
-								<div class="advantages__text">клиентов </div>
+						<div class="contacts__row">
+							<div class="contacts__icon">
+								<img src="img/con3.svg" alt="">
+							</div>
+							<div class="contacts__text">
+								<div class="contacts__text_1">Opening Hours</div>
+								<div class="contacts__text_2">Everyday from 6 AM - 9 PM</div>
 							</div>
 						</div>
-						<div class="advantages__column">
-							<div class="advantages__item">
-								<div class="advantages__icon">
-									<img src="img/advantages/04.svg" alt="Изображение">
-								</div>
-								<div id="num-4" class="advantages__value">0</div>
-								<div class="advantages__text">успешных проектов</div>
+						<div class="contacts__row">
+							<div class="contacts__icon">
+								<img src="img/con4.svg" alt="">
+							</div>
+							<div class="contacts__text">
+								<div class="contacts__text_1">Map Street</div>
+								<div class="contacts__text_2">Jl. Raya Surabaya 2787</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="page__practice practice">
-				<div class="practice__container _container">
-					<div class="practice__header header-block">
-						<h2 class="header-block__title">Практические советы</h2>
-						<div class="header-block__sub-title">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>At magnam neque quod sed alias
-							iure totam sequi veniam?
-						</div>
-					</div>
-					<div class="practice__body">
-						<div class="practice__column">
-							<article class="practice__item item-practice">
-								<div class="item-practice__content">
-									<a href="#" class="item-practice__link">
-										<h4 class="item-practice__title">Правовой аудит</h4>
-									</a>
-									<div class="item-practice__text">
-										Рекомендации по минимизации рисков и предоставление отчета
-									</div>
+					<div class="contacts__form form">
+						<div class="form__title title">have any questions?</div>
+						<form action="#" id="form1" class="form__body">
+							<div class="form__items">
+								<div class="form__item">
+									<label for="formName" class="form__label ">Name</label>
+									<input id="formName" type="text" name="name" class="form__input "
+										placeholder="Input your name">
 								</div>
-								<a href="#" class="item-practice__image _ibg">
-									<img src="img/practice/01.webp" alt="A single source of truth">
-								</a>
-							</article>
-						</div>
-						<div class="practice__column">
-							<article class="practice__item item-practice">
-								<div class="item-practice__content">
-									<a href="#" class="item-practice__link">
-										<h4 class="item-practice__title">Выход на новые рынки</h4>
-									</a>
-									<div class="item-practice__text">
-										Разработка правовой стратегии по запуску бизнеса в сложных нишах
-									</div>
-								</div>
-								<a href="#" class="item-practice__image _ibg">
-									<img src="img/practice/02.webp" alt="Fastest way to organize">
-								</a>
-							</article>
-						</div>
-						<div class="practice__column">
-							<article class="practice__item item-practice">
-								<div class="item-practice__content">
-									<a href="#" class="item-practice__link">
-										<h4 class="item-practice__title">Интеллектуальная собственность</h4>
-									</a>
-									<div class="item-practice__text">
-										Защита объектов интеллектуальной собственности (товарные знаки, ноу-хау,
-										программы и ПО)
-									</div>
-								</div>
-								<a href="#" class="item-practice__image _ibg">
-									<img src="img/practice/03.webp" alt="Fastest way to take action">
-								</a>
-							</article>
-						</div>
-						<div class="practice__column">
-							<article class="practice__item item-practice">
-								<div class="item-practice__content">
-									<a href="#" class="item-practice__link">
-										<h4 class="item-practice__title">Инвестиции и блокчейн</h4>
-									</a>
-									<div class="item-practice__text">
-										Разработка юридической архитектуры смарт контрактов
-									</div>
-								</div>
-								<a href="#" class="item-practice__image _ibg">
-									<img src="img/practice/04.webp" alt="Work better together">
-								</a>
-							</article>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="page__whoweare whoweare">
-				<div class="whoweare__container _container">
-					<div class="whoweare__header header-block">
-						<h2 class="header-block__title">Кто мы</h2>
-						<div class="header-block__sub-title">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quis ducimus dicta iste
-							veritatis libero ipsam. <br> Totam recusandae nisi, omnis magni voluptatem sequi earum
-							explicabo maiores iste doloribus nam adipisci!
-						</div>
-					</div>
-					<div class="whoweare__body">
-						<div class="whoweare__video">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/3KrvqONbES4"
-								title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen></iframe>
-						</div>
-						<div class="whoweare__content">
-							<div class="whoweare__top">
-								<h2 class="whoweare__title">Most trusted in our field</h2>
-								<div class="whoweare__text">Most calendars are designed for teams. Slate is designed for
-									freelancers who want a simple way to plan their schedule.</div>
-							</div>
-							<div class="whoweare__items">
-								<div class="whoweare__item item-whoweare">
-									<div class="item-whoweare__icon">
-										<img src="img/whoweare/icons/01.svg" alt="Изображение">
-									</div>
-									<div class="item-whoweare__body">
-										<div class="item-whoweare__title">the quick fox jumps over the lazy dog</div>
-										<div class="item-whoweare__text">Things on a very small scale Things on a very
-											small scaleThings on a very small scaleThings on a very small scale</div>
-									</div>
-								</div>
-								<div class="whoweare__item item-whoweare">
-									<div class="item-whoweare__icon">
-										<img src="img/whoweare/icons/02.svg" alt="Изображение">
-									</div>
-									<div class="item-whoweare__body">
-										<div class="item-whoweare__title">the quick fox jumps over the lazy dog</div>
-										<div class="item-whoweare__text">Things on a very small scale Things on a very
-											small scaleThings on a very small scaleThings on a very small scale</div>
-									</div>
+								<div class="form__item">
+									<label for="formEmail" class="form__label">E-mail</label>
+									<input id="formEmail" type="text" name="email" class="form__input "
+										placeholder="Input your email">
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="page__clients clients">
-				<div class="clients__header header-block">
-					<h2 class="header-block__title">Нам доверяют</h2>
-				</div>
-				<div class="clients__container _container">
-					<div class="clients__items">
-						<div class="clients__item">
-							<img src="img/clients/01.webp" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/clients/02.webp" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/clients/03.webp" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/clients/04.webp" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/clients/05.webp" alt="clients">
-						</div>
-						<div class="clients__item">
-							<img src="img/clients/06.webp" alt="clients">
-						</div>
-					</div>
-				</div>
-			</div>
-			<section class="page__subscribe subscribe">
-				<div class="subscribe__container _container">
-					<div class="subscribe__body">
-						<h4 class="subscribe__title">Подпишитесь на рассылку новостей</h4>
-						<form action="#" class="subscribe__form">
-							<input autocomplete="off" type="email" required name="form[]" placeholder="Your Email"
-								class="subscribe__input">
-							<button type="submit" class="subscribe__button">Подписаться</button>
+							<div class="form__item1">
+								<label for="formMessage" class="form__label">Speciale Request</label>
+								<textarea name="message" id="formMessage" class="form__input1"
+									placeholder="Input your special request"></textarea>
+							</div>
+							<button type="submit" class="form__button button">Send</button>
 						</form>
 					</div>
 				</div>
-			</section>
-			<section class="page__getintouch getintouch">
-				<div class="getintouch__container _container">
-					<div class="getintouch__header header-block">
-						<h2 class="header-block__title">Наши контакты</h2>
-					</div>
-					<div class="getintouch__items">
-						<div class="getintouch__item item-getintouch">
-							<div class="item-getintouch__icon">
-								<img src="img/getintouch/01.svg" alt="getintouch">
-							</div>
-							<div class="item-getintouch__phone">
-								<a href="tel:4805550103" class="item_phone">(480) 555-0103</a> <br>
-								<a href="tel:4805550103" class="item-getintouch__phone item_phone">(480) 555-0103</a>
-							</div>
-							<a href="#" class="item-getintouch__button">Отправить запрос</a>
-						</div>
-						<div class="getintouch__item item-getintouch item-getintouch_active">
-							<div class="item-getintouch__icon">
-								<img src="img/getintouch/02.svg" alt="getintouch">
-							</div>
-							<div class="item-getintouch__emails">
-								<a href="#" class="item_map">4517 Washington Ave. Manchester, Kentucky 39495</a>
-							</div>
-							<a href="#" class="item-getintouch__button">Отправить запрос</a>
-						</div>
-						<div class="getintouch__item item-getintouch">
-							<div class="item-getintouch__icon">
-								<img src="img/getintouch/03.svg" alt="getintouch">
-							</div>
-							<div class="item-getintouch__emails">
-								<a href="mailto:georgia.young@example.com"
-									class="item-getintouch__email">georgia.young@example.com</a>
-								<a href="mailto:georgia.young@ple.com"
-									class="item-getintouch__email">georgia.young@ple.com</a>
-							</div>
-							<a href="#" class="item-getintouch__button">Отправить запрос</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="page__contact contact">
-				<div class="contact__container _container">
-					<div class="contact__body">
-						<div class="contact__content">
-							<h4 class="contact__title">Консалтинговое агентство для вашего бизнеса</h4>
-							<div class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-						</div>
-						<button id="myBtn2" class="contact__button">Связаться с нами</button>
-					</div>
+				<div class="contacts__map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160843.81245862888!2d3.6437044705092188!3d50.95729169742453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c36d8ff5d3ff61%3A0x40099ab2f4d5c80!2z0KHQuNC90YIt0JzQsNGA0YLQtdC90YEt0JvQsNGC0LXQvCwg0JHQtdC70YzQs9C40Y8!5e0!3m2!1sru!2sru!4v1675513676334!5m2!1sru!2sru"
+						width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</section>
 			<div id="myModal" class="modal">
 				<div class="modal-content">
 					<span class="close">&times;</span>
-					<h2>Оставить заявку</h2>
-					<p>Мы перезвоним в течение 5 минут</p>
-					<form action="#" method="post" enctype="multipart/form-data">
-						<div><input type="text" name="name" value="" placeholder="Введите ваше имя"></div>
-						<div><input type="tel" name="phone" value="" placeholder="+7 (___) ___-__-__"></div>
+					<h2 class="modal__title">Submit your application</h2>
+					<p class="modal__subtitle">We will call you back within 5 minutes</p>
+					<form id="form" method="POST">
+						<div><input type="text" name="name" value="" placeholder="Your name"></div>
+						<div><input type="tel" name="phone" value="" placeholder="+32 (___) ___-__-__"></div>
+						<div><textarea name="message" value="" placeholder="Enter your message"></textarea>
+						</div>
 						<div>
-							<button type="submit">Отправить</button>
+							<button type="submit">Send</button>
 						</div>
 					</form>
 				</div>
 			</div>
 		</main>
 		<footer class="footer">
-			<div class="footer__top">
-				<div class="footer__main _container">
-					<div class="footer__row">
-						<div class="footer__column">
-							<div class="footer__label">Company Info</div>
-							<nav class="footer__menu menu-footer">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">About Us</a>
-									</li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Carrier</a></li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">We are
-											hiring</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="footer__column">
-							<div class="footer__label">Legal</div>
-							<nav class="footer__menu menu-footer">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">About Us</a>
-									</li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Carrier</a></li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">We are
-											hiring</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="footer__column">
-							<div class="footer__label">Features</div>
-							<nav class="footer__menu menu-footer">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">About Us</a>
-									</li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Carrier</a></li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">We are
-											hiring</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="footer__column">
-							<div class="footer__label">Resources</div>
-							<nav class="footer__menu menu-footer">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">About Us</a>
-									</li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">Carrier</a></li>
-									<li class="menu-footer__item"><a href="#" class="menu-footer__link">We are
-											hiring</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="footer__column">
-							<div class="footer__label">Get In Touch</div>
-							<div class="footer__contacts contacts-footer">
-								<a href="tel:4805550103" class="contacts-footer__item contacts-footer__item_phone">(480)
-									555-0103</a>
-								<a href="#" class="contacts-footer__item contacts-footer__item_map">4517 Washington Ave.
-									Manchester, Kentucky 39495</a>
-								<a href="mailto:debra.holt@example.com"
-									class="contacts-footer__item contacts-footer__item_email">debra.holt@example.com</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer__bottom">
-				<div class="footer__container _container">
-					<div class="footer__copy">Made With Love By Figmaland All Right Reserved </div>
-					<div class="footer__social social">
-						<a href="#" class="social__item">
-							<img src="img/footer/social/01.svg" alt="social">
-						</a>
-						<a href="#" class="social__item">
-							<img src="img/footer/social/02.svg" alt="social">
-						</a>
-						<a href="#" class="social__item">
-							<img src="img/footer/social/03.svg" alt="social">
-						</a>
-						<a href="#" class="social__item">
-							<img src="img/footer/social/04.svg" alt="social">
-						</a>
-					</div>
+			<div class="footer__content _container">
+				<a href="#" class="footer__logo logo">
+					<img src="img/logo1.svg" alt="">
+				</a>
+				<div class="footer__social social">
+					<a href="#"><img src="img/i-fb1.svg" alt=""></a>
+					<a href="#"><img src="img/i-lg1.svg" alt=""></a>
+					<a href="#"><img src="img/i-tw1.svg" alt=""></a>
+					<a href="#"><img src="img/i-yt1.svg" alt=""></a>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/script.js"></script>
+
 </body>
 
 </html>
